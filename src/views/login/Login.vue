@@ -15,13 +15,13 @@
 </template>
 <script>
 export default {
-  data () {
+  data() {
     return {
 
     }
   },
   methods: {
-    login () {
+    login() {
       // console.log(12313);
       // this.$router.push('/home');
       this.$router.push({ name: 'home', params: { userId: 21 } });
@@ -29,8 +29,9 @@ export default {
   }
 }
 </script>
-<style scoped>
+<style lang="scss" scoped>
+@import "../../common/sass/common.scss";
 div {
-  color: aliceblue;
+  color: $deafultTextColor;
 }
 </style>
