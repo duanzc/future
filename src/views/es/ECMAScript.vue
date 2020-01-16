@@ -1,8 +1,7 @@
-<!-- 组件 -->
+<!-- es语法 -->
 <template>
-
   <div>
-    组件
+      es6
   </div>
 </template>
 <script>

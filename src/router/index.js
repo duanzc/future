@@ -14,12 +14,13 @@ const routes = [
   {
     path: '/home',
     name: 'home',
+    redirect: 'top',
     component: () => import('../views/home/Home.vue'),
     children: [
       {
         path: '/es',
         name: 'essix',
-        component: () => import('../views/home/ECMAScript.vue')
+        component: () => import('../views/es/ECMAScript.vue')
       },
       {
         path: '/component',
@@ -30,6 +31,11 @@ const routes = [
         path: '/top',
         name: 'top',
         component: () => import('../views/home/Top.vue')
+      },
+      {
+        path: '/canvas',
+        name: 'canvas',
+        component: () => import('../views/canvas/Canvas.vue')
       }
     ]
   }

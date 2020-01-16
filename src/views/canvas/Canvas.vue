@@ -1,15 +1,12 @@
+<!-- 动画页 -->
 <template>
   <div>
-      es6
+      canvas
   </div>
 </template>
 <script>
 export default {
-  data() {
-    return {
 
-    }
-  }
 }
 </script>
 <style scoped>

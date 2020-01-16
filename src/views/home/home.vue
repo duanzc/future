@@ -2,17 +2,27 @@
   <a-layout>
     <a-layout-header :style="{ position: 'fixed', zIndex: 1, width: '100%' }">
       <div class="logo" />
+      <!-- <router-link to="/top">首页</router-link>
+      <router-link to="/component">组件</router-link>
+      <router-link to="/es">es6</router-link> -->
       <a-menu theme="dark" mode="horizontal" :defaultSelectedKeys="['1']" :style="{ lineHeight: '64px' }">
         <a-menu-item key="1">
-           首页
+          <router-link to="/top">首页</router-link>
         </a-menu-item>
-        <a-menu-item key="2">组件</a-menu-item>
-        <a-menu-item key="3">es6</a-menu-item>
+        <a-menu-item key="2">
+          <router-link to="/component">组件</router-link>
+        </a-menu-item>
+        <a-menu-item key="3">
+          <router-link to="/es">es6</router-link>
+        </a-menu-item>
+         <a-menu-item key="4">
+          <router-link to="/canvas">canvas</router-link>
+        </a-menu-item>
       </a-menu>
     </a-layout-header>
     <a-layout-content :style="{ padding: '0 50px', marginTop: '64px' }">
       <div :style="{ background: '#fff', padding: '24px', minHeight: '1380px' }">
-        <router-view></router-view>
+        <router-view />
       </div>
     </a-layout-content>
     <!-- <a-layout-footer :style="{ textAlign: 'center' }">
@@ -40,4 +50,7 @@ export default {
 }
 </script>
 <style scoped>
+.logo {
+  background: coral;
+}
 </style>
