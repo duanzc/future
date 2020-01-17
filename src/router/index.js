@@ -38,6 +38,11 @@ const routes = [
         component: () => import('../views/canvas/Canvas.vue')
       }
     ]
+  },
+  {
+    path: '/formwork',
+    name: 'formwork',
+    component: () => import('../views/formworking/FormWorking.vue')
   }
 
 ]

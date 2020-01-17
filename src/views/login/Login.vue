@@ -1,13 +1,13 @@
 <template>
-  <div>
+  <div class="bg">
     <div>
-      username: <input type="text">
+      <el-input v-model="name" placeholder="请输入姓名" class="el-input"></el-input>
     </div>
     <div>
-      password: <input type="password">
+      <el-input placeholder="请输入密码" v-model="pwd" show-password class="el-input"></el-input>
     </div>
     <div>
-      <button @click="login()">gogogo</button>
+      <el-button type="primary" @click="login()" class="el-input">前往</el-button>
     </div>
 
   </div>
@@ -17,14 +17,15 @@
 export default {
   data() {
     return {
-
+      name: '',
+      pwd: ''
     }
   },
   methods: {
     login() {
       // console.log(12313);
-      // this.$router.push('/home');
-      this.$router.push({ name: 'home', params: { userId: 21 } });
+      this.$router.push('/top');
+      // this.$router.push({ name: 'home', params: { userId: 21 } });
     }
   }
 }
@@ -33,5 +34,16 @@ export default {
 @import "../../common/sass/common.scss";
 div {
   color: $deafultTextColor;
+}
+.bg {
+  border: 1px solid #dadada;
+  width: 400px;
+  padding: 30px;
+  margin-top: 50px;
+  margin-left: 40%;
+}
+.el-input {
+  width: 350px;
+  margin-top: 30px;
 }
 </style>

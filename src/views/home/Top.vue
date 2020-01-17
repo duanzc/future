@@ -1,14 +1,16 @@
 <template>
   <div>
-      首页
+     top
   </div>
 </template>
 <script>
 export default {
   data() {
     return {
-
+      msg: ''
     }
+  },
+  methods: {
   }
 }
 </script>

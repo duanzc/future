@@ -15,8 +15,11 @@
         <a-menu-item key="3">
           <router-link to="/es">es6</router-link>
         </a-menu-item>
-         <a-menu-item key="4">
+        <a-menu-item key="4">
           <router-link to="/canvas">canvas</router-link>
+        </a-menu-item>
+         <a-menu-item key="5">
+          <router-link to="/formwork">表单设计</router-link>
         </a-menu-item>
       </a-menu>
     </a-layout-header>
