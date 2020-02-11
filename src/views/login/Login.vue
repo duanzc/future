@@ -1,5 +1,6 @@
 <template>
   <div class="bg">
+    <p>哈哈哈哈</p>
     <div>
       <el-input v-model="name" placeholder="请输入姓名" class="el-input"></el-input>
     </div>

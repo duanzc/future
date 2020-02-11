@@ -16,15 +16,8 @@ module.exports = {
     // 'comma-dangle': ["error", "always-multiline"],
     'comma-dangle':0,
     'no-multi-spaces': 0, // 不能用多余的空格
-    'no-unused-vars': [
-      2,
-      {
-        // 允许声明未使用变量
-        vars: 'local',
-        // 参数不检查
-        args: 'none'
-      }
-    ]
+    'no-unused-vars': 0 // 允许声明未使用变量,参数不检查
+     
   },
   parserOptions: {
     parser: 'babel-eslint'

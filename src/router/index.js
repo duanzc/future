@@ -2,6 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 // import Home from '../views/Home.vue'
 import Login from '../views/login/Login.vue'
+// import Login from '../views/login/Register.vue'
 
 Vue.use(VueRouter)
 
@@ -15,7 +16,7 @@ const routes = [
     path: '/home',
     name: 'home',
     redirect: 'top',
-    component: () => import('../views/home/Home.vue'),
+    component: () => import('../views/home/home.vue'),
     children: [
       {
         path: '/es',
@@ -36,15 +37,14 @@ const routes = [
         path: '/canvas',
         name: 'canvas',
         component: () => import('../views/canvas/Canvas.vue')
+      },
+      {
+        path: '/formwork',
+        name: 'formwork',
+        component: () => import('../views/formworking/FormWorking.vue')
       }
     ]
-  },
-  {
-    path: '/formwork',
-    name: 'formwork',
-    component: () => import('../views/formworking/FormWorking.vue')
   }
-
 ]
 
 const router = new VueRouter({
